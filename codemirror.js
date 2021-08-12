@@ -3543,7 +3543,6 @@
   // Sync the scrollable area and scrollbars, ensure the viewport
   // covers the visible area.
   function updateScrollTop(cm, val) {
-    debugger
     if (Math.abs(cm.doc.scrollTop - val) < 2) { return }
     if (!gecko) { updateDisplaySimple(cm, {top: val}); }
     setScrollTop(cm, val, true);
